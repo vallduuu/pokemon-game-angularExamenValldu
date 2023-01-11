@@ -2,12 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
+import {IsessioComponent} from "./game/pages/isessio/isessio.component";
 
 const routes: Routes = [
+  {
+    path: 'isessiogerard',
+    component: IsessioComponent
+  },
   {
     path: 'home',
     component: HomeComponent
   },
+
   {
     path: 'game',
     loadChildren: () => import('./game/game.module').then(m => m.GameModule)

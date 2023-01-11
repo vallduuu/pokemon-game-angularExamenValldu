@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { GameComponent } from './pages/game/game.component';
 import { GameoverComponent } from './pages/gameover/gameover.component';
+
 
 const routes: Routes = [
   {
